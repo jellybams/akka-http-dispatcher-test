@@ -7,7 +7,7 @@ To run:
 * clone this project
 * in the project root, build a docker image with `sbt docker`
 * start the docker container with `docker run -p 9004:9004 -it spoolphiz.test/httpservice:latest /opt/services/bin/start-service.sh`
-* open a new tab cd into the `bin` directory
+* open a new terminal and cd into the `bin` directory
 * run the `health.sh` script to start making requests against the service: `./health.sh 192.168.99.100`
     * The first and only parameter accepted by health.sh is the host on which the service is running. If running docker natively replace `192.168.99.100` with `locahost`
 
